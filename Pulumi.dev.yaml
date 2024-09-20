@@ -1,0 +1,5 @@
+config:
+  promox-pulumi:proxmox-api-token:
+    secure: AAABAK8grXeXKxIaOKiOEPEKJg80x+Nte7Lff0jFR8ViOw0bBvEWmS3OOvuXnpFmFmHJwFJwZk2rLSZIoQVf7YGs0iBw5M6YmpXj2yKSBLZVQDq0NMdzpVEaDxM=
+  promox-pulumi:proxmox-endpoint:
+    secure: AAABAMy6oCKs3/K55kadj7+qJKLFaxURt2zF5zqyfHk0FyF0bBZMYHbJNtBCuNJDJy3uG5PelMyUhrKG6ykBSQ==

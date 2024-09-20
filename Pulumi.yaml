@@ -1,0 +1,6 @@
+name: promox-pulumi
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+description: A minimal Proxmox-Pulumi reproduction
