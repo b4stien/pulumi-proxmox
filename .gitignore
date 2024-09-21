@@ -2,3 +2,5 @@
 /node_modules/
 debian-12-generic-amd64.qcow2
 d12-ci.qcow2
+terraform.*
+.terraform*

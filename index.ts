@@ -11,8 +11,8 @@ const provider = new proxmox.Provider("proxmoxve", {
   insecure: true,
 });
 
-const vm = new proxmox.vm.VirtualMachine(
-  "simple-vm",
+const proxmoxVm = new proxmox.vm.VirtualMachine(
+  "simple-vm-via-pulumi",
   {
     nodeName: proxmoxNodeName,
     agent: { enabled: true },
@@ -28,5 +28,5 @@ const vm = new proxmox.vm.VirtualMachine(
   }
 );
 
-export const ipv4Addresses = vm.ipv4Addresses;
-ipv4Addresses.apply((addr) => console.log(addr));
+export const ipv4Addresses = proxmoxVm.ipv4Addresses;
+export const ipv6Addresses = proxmoxVm.ipv6Addresses;
