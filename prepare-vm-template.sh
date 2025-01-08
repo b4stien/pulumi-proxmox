@@ -4,6 +4,9 @@
 wget https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2
 mv debian-12-generic-amd64.qcow2 d12-ci.qcow2
 
+# Ensure virt-customize is available, if it's not a `apt install libguestfs-tools` should do the trick
+which virt-customize
+
 # Customize image
 virt-customize -a d12-ci.qcow2 --install qemu-guest-agent
 virt-customize -a d12-ci.qcow2 --truncate /etc/machine-id

@@ -29,4 +29,3 @@ const proxmoxVm = new proxmox.vm.VirtualMachine(
 );
 
 export const ipv4Addresses = proxmoxVm.ipv4Addresses;
-export const ipv6Addresses = proxmoxVm.ipv6Addresses;
